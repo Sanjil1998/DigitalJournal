@@ -1,0 +1,74 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Gate;
+use App\User;
+
+class PostsController extends Controller
+{
+
+
+
+
+
+
+
+//
+//    public function __construct()
+//    {
+//        $this->middleware('auth');
+//    }
+//
+//    public function create($user)
+//    {
+//
+//        if(!Gate::allows('isAdmin') && !Gate::allows('isWriter')){
+//            abort(404,"Sorry, You can do this actions");
+//        }
+//        $user = User::findOrFail($user);
+//        return view('dashboard.myposts.add_posts',[
+//            'user'=>$user,
+//        ]);
+//    }
+//
+//    public function edit($user)
+//    {
+//
+//        if(!Gate::allows('isAdmin') && !Gate::allows('isWriter')){
+//            abort(404,"Sorry, You can do this actions");
+//        }
+//        $user = User::findOrFail($user);
+//        return view('dashboard.myposts.edit_posts',[
+//            'user'=>$user,
+//        ]);
+//    }
+//
+//    public function store()
+//    {
+//        $data = request()->validate([
+//            'posts_title' => 'required',
+//            'post' => 'required',
+//            'picture' => 'image',
+//        ]);
+//
+//
+//
+//        $imagePath = request('picture')->store('uploads', 'public');
+//
+//        // $image = Image::make(public_path("storage/{$imagePath}"))->fit(1000, 1000);
+//        // $image->save();
+//
+//        auth()->user()->posts()->create([
+//            'posts_title' => $data['posts_title'],
+//            'post' => $data['post'],
+//            'picture' => $imagePath,
+//        ]);
+//
+//        return redirect('/myposts/' . auth()->user()->id);
+//
+//        dd(request()->all());
+//    }
+
+}
